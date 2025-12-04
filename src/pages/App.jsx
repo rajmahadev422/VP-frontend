@@ -1,9 +1,11 @@
-import { useBasic } from "./store/useBasic";
+import { Link } from "react-router-dom";
+import { useBasic } from "../store/useBasic";
 
 function App() {
   const {count, increase, decrease} = useBasic()
   return (
     <>
+    <Link to='/login'>Login</Link>
       <h1 className="text-3xl">Mahadev</h1>
       <p>{count}</p>
       <div className="flex gap-3 m-3">
